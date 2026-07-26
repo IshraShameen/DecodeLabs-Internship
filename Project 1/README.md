@@ -7,9 +7,6 @@ A fully responsive, accessible portfolio-style web interface built with
 frameworks**. Built mobile-first, expanding through tablet and desktop
 breakpoints with fluid, `clamp()`-based typography.
 
-🔗 **Live demo:** add your deployed URL here once published
-📁 **Repo:** add your GitHub repo URL here
-
 ---
 
 ## ✨ Features
