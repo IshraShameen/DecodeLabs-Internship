@@ -1,13 +1,13 @@
-# Blueprint Studio API — Backend API Development
+# Blueprint Studio API - Backend API Development
 
-**DecodeLabs Full Stack Internship — Project 2: The Nervous System**
+**DecodeLabs Full Stack Internship - Project 2: The Nervous System**
 
 A small, dependency-light REST API built with **Node.js and Express**.
 Project 1 was the skin (the responsive frontend); this is the nervous
 system — the endpoints, validation, and status codes that let a client
 and server talk to each other reliably.
 
-No database is used on purpose — the brief for this project is about API
+No database is used on purpose - the brief for this project is about API
 logic, not persistence. Data lives in memory and resets on restart. The
 data layer (`data/store.js`) is isolated behind plain functions, so a
 real database can be dropped in later without touching any route file.
@@ -16,19 +16,19 @@ real database can be dropped in later without touching any route file.
 
 ## ✨ Features
 
-- **RESTful resource naming** — `/api/projects`, `/api/messages` (nouns),
+- **RESTful resource naming** - `/api/projects`, `/api/messages` (nouns),
   never `/getProjects` or `/createMessage` (verbs baked into the URL).
 - **GET and POST endpoints** for two resources: `projects` and
   `messages` (a contact-form inbox).
-- **Server-side validation on every write** — "never trust the client."
+- **Server-side validation on every write** - "never trust the client."
   Invalid input never reaches the data layer; it's rejected with a
   clear, field-level error list.
 - **Meaningful HTTP status codes throughout**:
-  - `200 OK` — successful GET
-  - `201 Created` — successful POST that creates a resource
-  - `400 Bad Request` — validation failed
-  - `404 Not Found` — resource or route doesn't exist
-  - `500 Internal Server Error` — caught by a central error handler
+  - `200 OK` - successful GET
+  - `201 Created` - successful POST that creates a resource
+  - `400 Bad Request` - validation failed
+  - `404 Not Found` - resource or route doesn't exist
+  - `500 Internal Server Error` - caught by a central error handler
 - **CORS enabled**, so Project 1's frontend (or any frontend) can call
   this API directly from the browser during local development.
 
